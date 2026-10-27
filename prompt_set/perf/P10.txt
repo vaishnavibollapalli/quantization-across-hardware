@@ -1,0 +1,1 @@
+Four friends, Ana, Ben, Chloe, and Dev, each own exactly one different pet: a cat, a dog, a parrot, or a fish. Ana is allergic to fur. Ben's pet can talk. Chloe walks her pet every morning. Who owns which pet? Explain your reasoning step by step.

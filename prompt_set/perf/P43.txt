@@ -1,0 +1,8 @@
+Read the report below and answer the question that follows.
+
+Ashgrove County Public Library System: 2025 Annual Report
+
+The Ashgrove County Public Library System operates seven branches serving about 186,000 residents. In 2025, the system recorded 1.12 million in-person visits, an increase of 9 percent over 2024. Total circulation reached 2.4 million items, of which 41 percent were digital, including e-books, e-audiobooks, and streaming films. The number of active library card holders rose to 97,500. Library leadership attributes most of the growth in visits to the reopening of the Central Branch in April, after a renovation that kept the building closed for 14 months. During the closure, many regular visitors had shifted to smaller branches or to digital services, and the reopening brought a large share of them back. Digital borrowing continued to grow even after the Central Branch reopened, suggesting that many patrons now use both physical and digital collections rather than choosing one. This report covers the renovation, collections, public programs, staffing, finances, the challenges the system faced during the year, and the plans approved by the library board for 2026. All figures are for the calendar year unless otherwise noted.
+
+Question: What share of total circulation was digital in 2025?
+Answer:

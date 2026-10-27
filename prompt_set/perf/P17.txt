@@ -1,0 +1,28 @@
+Classify each headline into one topic: sports, science, business, or entertainment.
+
+Headline: Local team clinches the championship in overtime thriller
+Topic: sports
+
+Headline: Researchers map a new species of deep-sea coral
+Topic: science
+
+Headline: Regional bakery chain opens its fiftieth store
+Topic: business
+
+Headline: Animated film breaks opening-weekend records
+Topic: entertainment
+
+Headline: Marathon runner sets a new course record despite heavy rain
+Topic: sports
+
+Headline: Telescope captures a rare double-star eclipse
+Topic: science
+
+Headline: Shipping company reports higher quarterly profits
+Topic: business
+
+Headline: Indie band announces a surprise reunion tour
+Topic: entertainment
+
+Headline: Startup raises funding to build cheaper battery storage for homes
+Topic:

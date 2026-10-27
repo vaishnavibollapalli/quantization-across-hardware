@@ -1,0 +1,1 @@
+Write a JavaScript function debounce(fn, delay) and briefly explain how it works.

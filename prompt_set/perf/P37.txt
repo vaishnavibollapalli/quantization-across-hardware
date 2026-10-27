@@ -1,0 +1,8 @@
+Read the report below and answer the question that follows.
+
+Kestrel Valley Community Microgrid: 2025 Annual Operations Report
+
+The Kestrel Valley Community Microgrid completed its fourth full year of operation in 2025. The system serves 1,240 households and 38 businesses across the town and the surrounding farm roads. Generation comes from a 4.2 MW solar array spread over three sites, a 1.5 MW wind installation on Harrow Ridge, and a lithium iron phosphate battery system. During 2025, the microgrid supplied 71 percent of the town's total electricity demand, up from 58 percent in 2024. The operations team attributes most of this improvement to the second battery bank, commissioned in March 2025, which raised total storage from 3 MWh to 6 MWh. With more storage available, surplus midday solar energy could be held for the evening peak instead of being curtailed or exported at low prices. Purchases from the regional grid fell by roughly one third compared with the previous year. The microgrid remained connected to the regional utility throughout the year and continued to import power during long stretches of cloudy, low-wind weather. This report summarizes generation, storage, reliability, costs, community programs, and the plans approved by the cooperative board for 2026.
+
+Question: What generation and storage equipment does the microgrid use?
+Answer:

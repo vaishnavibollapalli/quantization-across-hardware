@@ -1,0 +1,1 @@
+Three boxes are labeled 'apples', 'oranges', and 'mixed', and every label is wrong. You may take one fruit from one box without looking inside. How can you relabel all three boxes correctly? Explain.

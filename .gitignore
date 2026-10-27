@@ -1,0 +1,22 @@
+# Model weights (multi-GB, download separately)
+models/
+*.gguf
+*.safetensors
+*.bin
+
+# llama.cpp build / local tooling
+llama.cpp/
+build/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Raw logs (keep processed results in results/)
+results/raw/
+*.kld
+.tok_tmp.txt
+
+# OS
+.DS_Store

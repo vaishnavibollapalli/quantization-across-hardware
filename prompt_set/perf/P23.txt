@@ -1,0 +1,1 @@
+Write a SQL query that returns the top 5 customers by total order amount, given tables customers(id, name) and orders(id, customer_id, amount).

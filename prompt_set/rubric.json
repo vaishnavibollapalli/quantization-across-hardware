@@ -1,0 +1,7 @@
+{
+  "5": "Fully correct and complete, follows all instructions, fluent.",
+  "4": "Correct with a minor omission or slight awkwardness.",
+  "3": "Partly correct: one key point missing or one small error.",
+  "2": "Mostly wrong or ignores an instruction, but on topic.",
+  "1": "Wrong, off topic, repetitive/garbled, or hallucinated facts."
+}

@@ -1,0 +1,16 @@
+Extract the person, date, and amount from each sentence as JSON.
+
+Sentence: Maria Lopez paid $45.00 on March 3, 2024.
+JSON: {"person": "Maria Lopez", "date": "2024-03-03", "amount": 45.00}
+
+Sentence: On July 19, 2023, a refund of $120.50 was issued to Tom Becker.
+JSON: {"person": "Tom Becker", "date": "2023-07-19", "amount": 120.50}
+
+Sentence: Priya Nair transferred $9.99 for the app subscription on January 2, 2025.
+JSON: {"person": "Priya Nair", "date": "2025-01-02", "amount": 9.99}
+
+Sentence: The invoice for $310.00 was settled by Jonah Kim on November 28, 2024.
+JSON: {"person": "Jonah Kim", "date": "2024-11-28", "amount": 310.00}
+
+Sentence: On September 5, 2025, Aisha Bello sent $72.25 to cover the team dinner.
+JSON:

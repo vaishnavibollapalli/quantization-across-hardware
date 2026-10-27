@@ -1,0 +1,1 @@
+Explain what an API is to someone who is new to programming.

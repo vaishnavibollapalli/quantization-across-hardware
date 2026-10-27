@@ -1,0 +1,16 @@
+Rewrite each formal sentence in a casual, friendly tone.
+
+Formal: We regret to inform you that the event has been postponed.
+Casual: Heads up, the event got pushed back.
+
+Formal: Kindly submit your report by the end of the business day.
+Casual: Can you send your report over by end of day?
+
+Formal: Your request has been received and is currently under review.
+Casual: Got your request, we're looking at it now.
+
+Formal: Please be advised that the office will be closed on Monday.
+Casual: Just so you know, the office is closed Monday.
+
+Formal: We would appreciate your attendance at the quarterly planning meeting.
+Casual:

@@ -1,0 +1,16 @@
+List every city mentioned in each sentence, separated by commas.
+
+Sentence: She flew from Chicago to Denver and then drove to Boulder.
+Cities: Chicago, Denver, Boulder
+
+Sentence: The conference moved from Lisbon to Madrid this year.
+Cities: Lisbon, Madrid
+
+Sentence: Our team has offices in Toronto, Seattle, and Austin.
+Cities: Toronto, Seattle, Austin
+
+Sentence: After a week in Kyoto, they took the train to Osaka.
+Cities: Kyoto, Osaka
+
+Sentence: He grew up in Nairobi, studied in Cairo, and now works between Dubai and Mumbai.
+Cities:

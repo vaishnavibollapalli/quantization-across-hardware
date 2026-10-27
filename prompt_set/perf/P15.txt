@@ -1,0 +1,28 @@
+Classify the sentiment of each review as positive, negative, or neutral.
+
+Review: The battery lasts all day and the screen is gorgeous.
+Sentiment: positive
+
+Review: It stopped charging after two weeks and support never replied.
+Sentiment: negative
+
+Review: The package arrived on Tuesday.
+Sentiment: neutral
+
+Review: Setup took five minutes and it just works.
+Sentiment: positive
+
+Review: The keyboard feels cheap and two keys already stick.
+Sentiment: negative
+
+Review: It comes in black and silver.
+Sentiment: neutral
+
+Review: Honestly the best headphones I have owned for the price.
+Sentiment: positive
+
+Review: The app logs me out every time I close it, which is infuriating.
+Sentiment: negative
+
+Review: Sound quality is decent, but the case scratches far too easily and the hinge creaks.
+Sentiment:

@@ -1,0 +1,1 @@
+Write a Python class Stack with push, pop, peek, and is_empty methods, including docstrings.

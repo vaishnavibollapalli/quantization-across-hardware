@@ -1,0 +1,19 @@
+Translate English to French.
+
+English: Good morning, how are you?
+French: Bonjour, comment allez-vous ?
+
+English: The library opens at nine o'clock.
+French: La bibliothèque ouvre à neuf heures.
+
+English: I would like a cup of coffee, please.
+French: Je voudrais une tasse de café, s'il vous plaît.
+
+English: We are going to the beach on Saturday.
+French: Nous allons à la plage samedi.
+
+English: My sister lives in a small village near the mountains.
+French: Ma sœur habite dans un petit village près des montagnes.
+
+English: The train was late because of the snow.
+French:

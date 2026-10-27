@@ -1,0 +1,1 @@
+Explain what a hash table is and give one example of where it is used in real software.
