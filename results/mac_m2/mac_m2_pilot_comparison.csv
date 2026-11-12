@@ -1,0 +1,5 @@
+device,model,quantization,model_size_gib,test,tokens_per_second,std_dev,repeat_count
+MacBook_Air_M2,Qwen2.5-3B-Instruct,Q4_K_M,1.79,pp256,124.29,23.22,3
+MacBook_Air_M2,Qwen2.5-3B-Instruct,Q4_K_M,1.79,tg128,9.61,2.16,3
+MacBook_Air_M2,Qwen2.5-3B-Instruct,Q8_0,3.05,pp256,157.99,16.73,3
+MacBook_Air_M2,Qwen2.5-3B-Instruct,Q8_0,3.05,tg128,6.69,0.59,3

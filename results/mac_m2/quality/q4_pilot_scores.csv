@@ -1,0 +1,3 @@
+id,model,quant,device,category,check,score,detail
+M01,qwen2.5-3b,Q4_K_M,mac-m2,math,number,1,got=0.5
+M02,qwen2.5-3b,Q4_K_M,mac-m2,math,number,1,got=120.0

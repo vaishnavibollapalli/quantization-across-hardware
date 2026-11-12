@@ -1,0 +1,101 @@
+id,model,quant,device,category,check,score,detail
+M01,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=0.5
+M02,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=120.0
+M03,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=3.0
+M04,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=57.8
+M05,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=42.0
+M06,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=21.0
+M07,qwen2.5-3b,Q8_0,mac-m2,math,number,0,got=4.0
+M08,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=18.0
+M09,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=30.0
+M10,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=210.0
+M11,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=15.0
+M12,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=2.0
+M13,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=1275.0
+M14,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=10.0
+M15,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=150.0
+M16,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=18.0
+M17,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=12.0
+M18,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=14.0
+M19,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=14.0
+M20,qwen2.5-3b,Q8_0,mac-m2,math,number,1,got=37.5
+L01,qwen2.5-3b,Q8_0,mac-m2,logic,yesno,1,got=no
+L02,qwen2.5-3b,Q8_0,mac-m2,logic,yesno,1,got=no
+L03,qwen2.5-3b,Q8_0,mac-m2,logic,yesno,1,got=yes
+L04,qwen2.5-3b,Q8_0,mac-m2,logic,yesno,1,got=no
+L05,qwen2.5-3b,Q8_0,mac-m2,logic,yesno,1,got=no
+L06,qwen2.5-3b,Q8_0,mac-m2,logic,yesno,1,got=yes
+L07,qwen2.5-3b,Q8_0,mac-m2,logic,answer_text,0,got=None
+L08,qwen2.5-3b,Q8_0,mac-m2,logic,number,1,got=9.0
+F01,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F02,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,0,missing=['Mercury']
+F03,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F04,qwen2.5-3b,Q8_0,mac-m2,factual,contains_any,1,hit=['carbon dioxide']
+F05,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F06,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F07,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F08,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F09,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F10,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F11,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F12,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F13,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F14,qwen2.5-3b,Q8_0,mac-m2,factual,contains_all,1,ok
+F15,qwen2.5-3b,Q8_0,mac-m2,factual,contains_any,1,hit=['7']
+R01,qwen2.5-3b,Q8_0,mac-m2,reading,regex_all,1,ok
+R02,qwen2.5-3b,Q8_0,mac-m2,reading,regex_all,1,ok
+R03,qwen2.5-3b,Q8_0,mac-m2,reading,regex_all,1,ok
+R04,qwen2.5-3b,Q8_0,mac-m2,reading,contains_all,1,ok
+R05,qwen2.5-3b,Q8_0,mac-m2,reading,contains_any,1,hit=['half']
+R06,qwen2.5-3b,Q8_0,mac-m2,reading,regex_all,1,ok
+R07,qwen2.5-3b,Q8_0,mac-m2,reading,contains_all,1,ok
+R08,qwen2.5-3b,Q8_0,mac-m2,reading,regex_all,1,ok
+R09,qwen2.5-3b,Q8_0,mac-m2,reading,regex_all,1,ok
+R10,qwen2.5-3b,Q8_0,mac-m2,reading,regex_all,1,ok
+R11,qwen2.5-3b,Q8_0,mac-m2,reading,contains_all,1,ok
+R12,qwen2.5-3b,Q8_0,mac-m2,reading,regex_all,1,ok
+R13,qwen2.5-3b,Q8_0,mac-m2,reading,contains_all,1,ok
+R14,qwen2.5-3b,Q8_0,mac-m2,reading,contains_all,1,ok
+R15,qwen2.5-3b,Q8_0,mac-m2,reading,regex_all,1,ok
+X01,qwen2.5-3b,Q8_0,mac-m2,long_context,contains_all,1,ok
+X02,qwen2.5-3b,Q8_0,mac-m2,long_context,regex_all,1,ok
+X03,qwen2.5-3b,Q8_0,mac-m2,long_context,contains_any,1,hit=['4']
+X04,qwen2.5-3b,Q8_0,mac-m2,long_context,contains_all,1,ok
+X05,qwen2.5-3b,Q8_0,mac-m2,long_context,contains_all,1,ok
+X06,qwen2.5-3b,Q8_0,mac-m2,long_context,regex_all,1,ok
+X07,qwen2.5-3b,Q8_0,mac-m2,long_context,contains_all,1,ok
+X08,qwen2.5-3b,Q8_0,mac-m2,long_context,regex_all,1,ok
+X09,qwen2.5-3b,Q8_0,mac-m2,long_context,regex_all,1,ok
+X10,qwen2.5-3b,Q8_0,mac-m2,long_context,regex_all,1,ok
+X11,qwen2.5-3b,Q8_0,mac-m2,long_context,regex_all,1,ok
+X12,qwen2.5-3b,Q8_0,mac-m2,long_context,regex_all,1,ok
+I01,qwen2.5-3b,Q8_0,mac-m2,instruction,bullets_exact,1,lines=3 bullets=3
+I02,qwen2.5-3b,Q8_0,mac-m2,instruction,json_keys,1,"keys=['city', 'country', 'population_millions']"
+I03,qwen2.5-3b,Q8_0,mac-m2,instruction,one_sentence_max_words,1,words=14 sentences=1
+I04,qwen2.5-3b,Q8_0,mac-m2,instruction,numbered_exact,1,lines=5 numbered=5
+I05,qwen2.5-3b,Q8_0,mac-m2,instruction,exact,1,got='BANANA'
+I06,qwen2.5-3b,Q8_0,mac-m2,instruction,exact,0,got='6'
+I07,qwen2.5-3b,Q8_0,mac-m2,instruction,starts_with,1,"start='Yesterday, the curio'"
+I08,qwen2.5-3b,Q8_0,mac-m2,instruction,line_count,1,lines=3
+I09,qwen2.5-3b,Q8_0,mac-m2,instruction,json_set,1,"got=['red', 'green', 'blue']"
+I10,qwen2.5-3b,Q8_0,mac-m2,instruction,all_lower,1,lowercase=True missing=[]
+I11,qwen2.5-3b,Q8_0,mac-m2,instruction,prefixed_lines,1,lines=2 prefixed=2
+I12,qwen2.5-3b,Q8_0,mac-m2,instruction,sentence_count,1,sentences=3
+S01,qwen2.5-3b,Q8_0,mac-m2,few_shot,label,1,got=technical
+S02,qwen2.5-3b,Q8_0,mac-m2,few_shot,label,1,got=billing
+S03,qwen2.5-3b,Q8_0,mac-m2,few_shot,label,1,got=bird
+S04,qwen2.5-3b,Q8_0,mac-m2,few_shot,label,1,got=late
+S05,qwen2.5-3b,Q8_0,mac-m2,few_shot,label,1,got=ottawa
+S06,qwen2.5-3b,Q8_0,mac-m2,few_shot,label,1,got=feet
+C01,qwen2.5-3b,Q8_0,mac-m2,code,python_tests,1,pass
+C02,qwen2.5-3b,Q8_0,mac-m2,code,python_tests,1,pass
+C03,qwen2.5-3b,Q8_0,mac-m2,code,python_tests,1,pass
+C04,qwen2.5-3b,Q8_0,mac-m2,code,python_tests,1,pass
+C05,qwen2.5-3b,Q8_0,mac-m2,code,python_tests,1,pass
+C06,qwen2.5-3b,Q8_0,mac-m2,code,python_tests,1,pass
+O01,qwen2.5-3b,Q8_0,mac-m2,open_ended,manual,,manual rubric
+O02,qwen2.5-3b,Q8_0,mac-m2,open_ended,manual,,manual rubric
+O03,qwen2.5-3b,Q8_0,mac-m2,open_ended,manual,,manual rubric
+O04,qwen2.5-3b,Q8_0,mac-m2,open_ended,manual,,manual rubric
+O05,qwen2.5-3b,Q8_0,mac-m2,open_ended,manual,,manual rubric
+O06,qwen2.5-3b,Q8_0,mac-m2,open_ended,manual,,manual rubric
