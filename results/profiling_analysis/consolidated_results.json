@@ -1,0 +1,255 @@
+{
+  "hardware": "MacBook Air M2, 8 GB",
+  "phi_cpu_microbenchmarks": [
+    {
+      "prompt": 256,
+      "output": 128,
+      "pp": 15.424442,
+      "pp_sd": 0.998233,
+      "tg": 8.128051,
+      "tg_sd": 0.111844,
+      "pp_s": 16.643084402,
+      "tg_s": 15.749930528,
+      "source": "phi3_q4_cpu_256_128.csv"
+    },
+    {
+      "prompt": 256,
+      "output": 512,
+      "pp": 12.052546,
+      "pp_sd": 3.08627,
+      "tg": 4.836111,
+      "tg_sd": 0.25401,
+      "pp_s": 22.141402416,
+      "tg_s": 106.071144513,
+      "source": "phi3_q4_cpu_256_512.csv"
+    },
+    {
+      "prompt": 1024,
+      "output": 128,
+      "pp": 11.491241,
+      "pp_sd": 1.606578,
+      "tg": 7.551284,
+      "tg_sd": 0.454745,
+      "pp_s": 90.352731875,
+      "tg_s": 16.993163791,
+      "source": "phi3_q4_cpu_1024_128.csv"
+    },
+    {
+      "prompt": 1024,
+      "output": 512,
+      "pp": 11.402037,
+      "pp_sd": 0.267211,
+      "tg": 4.461208,
+      "tg_sd": 0.196675,
+      "pp_s": 89.841856583,
+      "tg_s": 114.914118847,
+      "source": "phi3_q4_cpu_1024_512.csv"
+    }
+  ],
+  "qwen_server_workloads": [
+    {
+      "quant": "Q4",
+      "prompt": 256,
+      "output": 128,
+      "n": 3,
+      "pp": 160.21227951635723,
+      "pp_sd": 16.085263941320733,
+      "tg": 13.543177446758893,
+      "tg_sd": 0.8038126844601317,
+      "prompt_ms": 1609.2173333333333,
+      "prompt_ms_sd": 169.4871945969173,
+      "generation_ms": 9399.182,
+      "generation_ms_sd": 550.3775429203123,
+      "timing_sum_s": 11.008399333333333
+    },
+    {
+      "quant": "Q4",
+      "prompt": 256,
+      "output": 512,
+      "n": 3,
+      "pp": 122.00248969912273,
+      "pp_sd": 23.880016927020115,
+      "tg": 12.088552433250497,
+      "tg_sd": 1.7045010062639028,
+      "prompt_ms": 2150.447,
+      "prompt_ms_sd": 401.4870759850185,
+      "generation_ms": 42804.882333333335,
+      "generation_ms_sd": 5682.742976841582,
+      "timing_sum_s": 44.95532933333333
+    },
+    {
+      "quant": "Q4",
+      "prompt": 1024,
+      "output": 128,
+      "n": 3,
+      "pp": 172.88510269753868,
+      "pp_sd": 3.469528612581763,
+      "tg": 14.446807397685749,
+      "tg_sd": 0.04405096361129124,
+      "prompt_ms": 5924.618,
+      "prompt_ms_sd": 120.27219654184383,
+      "generation_ms": 8790.924,
+      "generation_ms_sd": 26.76022518589908,
+      "timing_sum_s": 14.715542000000001
+    },
+    {
+      "quant": "Q4",
+      "prompt": 1024,
+      "output": 512,
+      "n": 3,
+      "pp": 172.83898103149875,
+      "pp_sd": 4.25732186275945,
+      "tg": 14.274884116757073,
+      "tg_sd": 0.18060208766001623,
+      "prompt_ms": 5926.958333333333,
+      "prompt_ms_sd": 144.2635285036841,
+      "generation_ms": 35800.932,
+      "generation_ms_sd": 449.7928641619358,
+      "timing_sum_s": 41.727890333333335
+    },
+    {
+      "quant": "Q8",
+      "prompt": 256,
+      "output": 128,
+      "n": 3,
+      "pp": 184.85812847332193,
+      "pp_sd": 5.018108438344824,
+      "tg": 9.25904040422318,
+      "tg_sd": 0.6544452076498138,
+      "prompt_ms": 1385.517,
+      "prompt_ms_sd": 37.09044126186689,
+      "generation_ms": 13763.688,
+      "generation_ms_sd": 1005.4672207406862,
+      "timing_sum_s": 15.149205
+    },
+    {
+      "quant": "Q8",
+      "prompt": 256,
+      "output": 512,
+      "n": 3,
+      "pp": 173.2784393604489,
+      "pp_sd": 21.312463335344532,
+      "tg": 10.0335720322768,
+      "tg_sd": 0.9027372900174793,
+      "prompt_ms": 1493.325,
+      "prompt_ms_sd": 194.52358771367557,
+      "generation_ms": 51220.50633333333,
+      "generation_ms_sd": 4859.682323225903,
+      "timing_sum_s": 52.71383133333333
+    },
+    {
+      "quant": "Q8",
+      "prompt": 1024,
+      "output": 128,
+      "n": 3,
+      "pp": 194.3831852386305,
+      "pp_sd": 7.942372255941058,
+      "tg": 10.215332213004608,
+      "tg_sd": 0.869297910015682,
+      "prompt_ms": 5273.937,
+      "prompt_ms_sd": 219.97640409598495,
+      "generation_ms": 12495.727666666668,
+      "generation_ms_sd": 1118.1662640145842,
+      "timing_sum_s": 17.769664666666667
+    },
+    {
+      "quant": "Q8",
+      "prompt": 1024,
+      "output": 512,
+      "n": 3,
+      "pp": 191.47079918191463,
+      "pp_sd": 5.917265229729687,
+      "tg": 9.825352479614166,
+      "tg_sd": 0.6141488543306507,
+      "prompt_ms": 5351.530666666667,
+      "prompt_ms_sd": 167.7865569863492,
+      "generation_ms": 52142.600666666665,
+      "generation_ms_sd": 3224.4755188071044,
+      "timing_sum_s": 57.49413133333333
+    }
+  ],
+  "qwen_gpu_microbenchmarks": [
+    {
+      "quant": "Q4",
+      "test": "pp256",
+      "mean": 119.215914,
+      "sd": 23.556897,
+      "size_bytes": 1923946496,
+      "gpu_layers": 99
+    },
+    {
+      "quant": "Q4",
+      "test": "tg128",
+      "mean": 14.003453,
+      "sd": 1.560931,
+      "size_bytes": 1923946496,
+      "gpu_layers": 99
+    },
+    {
+      "quant": "Q8",
+      "test": "pp256",
+      "mean": 123.104499,
+      "sd": 14.093608,
+      "size_bytes": 3279519744,
+      "gpu_layers": 99
+    },
+    {
+      "quant": "Q8",
+      "test": "tg128",
+      "mean": 10.290847,
+      "sd": 0.543616,
+      "size_bytes": 3279519744,
+      "gpu_layers": 99
+    }
+  ],
+  "sources": [
+    {
+      "file": "phi3_q4_cpu_256_128.csv",
+      "snapshot": "sources/phi3_q4_cpu_256_128.csv",
+      "sha256": "6d21099e43beaeb98f00a8a00ccb477c656bb7ebb5a36bb84de2b184cb2819a7"
+    },
+    {
+      "file": "phi3_q4_cpu_256_512.csv",
+      "snapshot": "sources/phi3_q4_cpu_256_512.csv",
+      "sha256": "dbfd532c866a6db550e8d8a2f24ec7f50e3d7211647869f712cd0c3aa2f8ab51"
+    },
+    {
+      "file": "phi3_q4_cpu_1024_128.csv",
+      "snapshot": "sources/phi3_q4_cpu_1024_128.csv",
+      "sha256": "ed486ecb6b099fbb539c72ab5ece51bc9224e812aacbe78136ec748a70cb6319"
+    },
+    {
+      "file": "phi3_q4_cpu_1024_512.csv",
+      "snapshot": "sources/phi3_q4_cpu_1024_512.csv",
+      "sha256": "6be3f8403db642412dd2478f29329758da8b5e5d66f0242d69c53d92094c02d4"
+    },
+    {
+      "file": "quantization-across-hardware/mac_automated_benchmarks.csv",
+      "snapshot": "sources/mac_automated_benchmarks.csv",
+      "sha256": "421f96de12c2e2ad6e212a361c914974d7b770c18fcca686166c8cfb782a009f"
+    },
+    {
+      "file": "results/mac_m2_q4_full_bench.csv",
+      "snapshot": "sources/mac_m2_q4_full_bench.csv",
+      "sha256": "c8310ebde0aca8b849e73ca405b8eae96a3812f0b47cd99548d9fe3e9b277eda"
+    },
+    {
+      "file": "results/mac_m2_q8_full_bench.csv",
+      "snapshot": "sources/mac_m2_q8_full_bench.csv",
+      "sha256": "24958ef7820f5802d20b8b950ef631f20760ca0ccda8f3d5f66354e58daa1399"
+    }
+  ],
+  "q4_decode_advantage_percent": [
+    46.269773707669074,
+    20.48104497942578,
+    41.42278583259651,
+    45.28622913401716
+  ],
+  "q8_prefill_advantage_percent": [
+    15.383245923074472,
+    42.02860924213982,
+    12.434895896555398,
+    10.77987039684083
+  ],
+  "qwen_q4_file_reduction_percent": 41.3345048609654
+}

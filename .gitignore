@@ -20,3 +20,9 @@ results/raw/
 
 # OS
 .DS_Store
+
+# Runtime lock, not an experiment result
+results/phi_mac/experiment.lock
+
+# Generated plotting cache
+.mplconfig/

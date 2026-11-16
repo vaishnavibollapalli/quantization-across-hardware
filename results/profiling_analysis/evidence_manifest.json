@@ -1,0 +1,37 @@
+[
+  {
+    "original": "quantization-across-hardware/benchmark_mac.py",
+    "snapshot": "sources/benchmark_mac.py",
+    "sha256": "9ca06a3d54b361d6ac7f91ce95c355cb19fa790389f0b72efcbf5992b726b8ce"
+  },
+  {
+    "original": "quantization-across-hardware/llama_server_q4.log",
+    "snapshot": "sources/llama_server_q4.log",
+    "sha256": "317dcb605923f40e649225f4278de06ccb76676d72d80f41931cc721323bba34"
+  },
+  {
+    "original": "quantization-across-hardware/llama_server_q8.log",
+    "snapshot": "sources/llama_server_q8.log",
+    "sha256": "9bda3a76e40c074546e83d3c99c6d4c2374c21d447022d52404b51689d8b447f"
+  },
+  {
+    "original": "quantization-across-hardware/results/phi_mac/status.json",
+    "snapshot": "sources/status.json",
+    "sha256": "c8887d8a6187f5686c641351fd618d7f9c2f10e6bbdec978907964add10098ca"
+  },
+  {
+    "original": "phi3_q4_cpu_repeated.csv",
+    "snapshot": "sources/phi3_q4_cpu_repeated.csv",
+    "sha256": "4ee4dcaa3c5d78af62d81c9da5170da15339f6fe575965008cb88ef3088f8289"
+  },
+  {
+    "original": "phi3_q4_cpu_256_512.stderr.log",
+    "snapshot": "sources/phi3_q4_cpu_256_512.stderr.log",
+    "sha256": "178956212208f550e3d47e29c28011f1ab04cd586958340d06438e439fc3c704"
+  },
+  {
+    "original": "phi3_q4_cpu_1024_512.stderr.log",
+    "snapshot": "sources/phi3_q4_cpu_1024_512.stderr.log",
+    "sha256": "189f963e76c9e85acab3da7d11b62020b647ef92364471f986585b7cd9afeec5"
+  }
+]

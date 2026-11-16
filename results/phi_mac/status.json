@@ -1,0 +1,20 @@
+{
+  "started": "2026-11-16T03:36:05-0500",
+  "hardware": "MacBook Air M2, 8 GB",
+  "models": {
+    "Q4": {
+      "memory": {
+        "available_bytes": 1776533504,
+        "vm_stat": "Mach Virtual Memory Statistics: (page size of 16384 bytes)\nPages free:                                4011.\nPages active:                            105358.\nPages inactive:                           99338.\nPages speculative:                         5082.\nPages throttled:                              0.\nPages wired down:                        104592.\nPages purgeable:                            187.\n\"Translation faults\":                 661515203.\nPages copy-on-write:                    6272780.\nPages zero filled:                    131755362.\nPages reactivated:                    272527662.\nPages purged:                          16626395.\nFile-backed pages:                        78842.\nAnonymous pages:                         130936.\nPages stored in compressor:              566894.\nPages occupied by compressor:            169076.\nDecompressions:                       291406306.\nCompressions:                         313164835.\nPageins:                               64678206.\nPageouts:                               1207535.\nSwapins:                               13195331.\nSwapouts:                              14274636.\n"
+      },
+      "required_bytes": 5077586656,
+      "model_path": "/Users/amruthanatashakodali/quantization-project/models/phi3/Phi-3.1-mini-4k-instruct-Q4_K_M.gguf",
+      "status": "skipped_or_stopped",
+      "reason": "Insufficient conservative memory headroom; no model loaded"
+    },
+    "Q8": {
+      "status": "skipped_or_stopped",
+      "reason": "Q8 skipped: Q4 did not complete safely"
+    }
+  }
+}

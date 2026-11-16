@@ -1,0 +1,568 @@
+{
+  "repetitions": 3,
+  "runs": [
+    {
+      "prompt": 256,
+      "generation": 512,
+      "csv": "/Users/amruthanatashakodali/quantization-project/phi3_q4_cpu_256_512.csv",
+      "log": "/Users/amruthanatashakodali/quantization-project/phi3_q4_cpu_256_512.stderr.log",
+      "command": [
+        "/opt/homebrew/bin/llama-bench",
+        "-m",
+        "models/phi3/Phi-3.1-mini-4k-instruct-Q4_K_M.gguf",
+        "-p",
+        "256",
+        "-n",
+        "512",
+        "-r",
+        "3",
+        "-t",
+        "4",
+        "-ngl",
+        "0",
+        "-o",
+        "csv"
+      ],
+      "status": "complete",
+      "exit_code": 0,
+      "reason": null
+    },
+    {
+      "prompt": 1024,
+      "generation": 512,
+      "csv": "/Users/amruthanatashakodali/quantization-project/phi3_q4_cpu_1024_512.csv",
+      "log": "/Users/amruthanatashakodali/quantization-project/phi3_q4_cpu_1024_512.stderr.log",
+      "command": [
+        "/opt/homebrew/bin/llama-bench",
+        "-m",
+        "models/phi3/Phi-3.1-mini-4k-instruct-Q4_K_M.gguf",
+        "-p",
+        "1024",
+        "-n",
+        "512",
+        "-r",
+        "3",
+        "-t",
+        "4",
+        "-ngl",
+        "0",
+        "-o",
+        "csv"
+      ],
+      "status": "complete",
+      "exit_code": 0,
+      "reason": null
+    }
+  ],
+  "memory": [
+    {
+      "time": "2026-11-16T04:05:42.510010",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2502.75M  free = 569.25M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:06:02.634730",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2406.75M  free = 665.25M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:06:22.759682",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2497.06M  free = 574.94M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:06:42.868007",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2481.06M  free = 590.94M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:07:03.371554",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2465.06M  free = 606.94M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:07:23.469291",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2551.56M  free = 520.44M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:07:43.534718",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2551.56M  free = 520.44M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:08:03.625317",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2511.56M  free = 560.44M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:08:23.816597",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2495.56M  free = 576.44M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:08:43.905999",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2479.56M  free = 592.44M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:09:04.106712",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2471.56M  free = 600.44M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:09:24.337312",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2423.56M  free = 648.44M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:09:45.660943",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2415.56M  free = 656.44M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:10:05.781528",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2399.56M  free = 672.44M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:10:15.810462",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2639.25M  free = 432.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:10:26.012782",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2631.25M  free = 440.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:10:36.065734",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2631.25M  free = 440.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:10:46.419294",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2631.25M  free = 440.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:10:56.692325",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2591.25M  free = 480.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:11:06.880981",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2567.25M  free = 504.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:11:17.309085",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2543.25M  free = 528.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:11:27.467248",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2535.25M  free = 536.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:11:37.569870",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2471.25M  free = 600.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:11:47.767928",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2471.25M  free = 600.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:11:57.990451",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2463.25M  free = 608.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:12:08.073287",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2455.25M  free = 616.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:12:18.236885",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2455.25M  free = 616.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:12:28.364987",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2455.25M  free = 616.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:12:38.449269",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2439.25M  free = 632.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:12:48.569678",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2431.25M  free = 640.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:12:58.619752",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2431.25M  free = 640.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:13:08.675907",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2431.25M  free = 640.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:13:18.910412",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2431.25M  free = 640.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:13:29.697219",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2423.25M  free = 648.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:13:40.333491",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2423.25M  free = 648.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:13:50.546823",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2423.25M  free = 648.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:14:00.709611",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2423.25M  free = 648.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:14:10.941124",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2423.25M  free = 648.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:14:21.162404",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2423.25M  free = 648.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:14:31.203873",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2423.25M  free = 648.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:14:41.257030",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2423.25M  free = 648.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:14:51.282330",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2415.25M  free = 656.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:15:01.333567",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2415.25M  free = 656.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:15:12.042337",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2407.25M  free = 664.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:15:22.176283",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2399.25M  free = 672.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:15:32.363543",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2399.25M  free = 672.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:15:42.471500",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2391.25M  free = 680.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:15:52.605692",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2391.25M  free = 680.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:16:02.629538",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2359.25M  free = 712.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:16:12.733714",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2351.25M  free = 720.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:16:22.789485",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2351.25M  free = 720.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:16:32.940662",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2351.25M  free = 720.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:16:43.027345",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2351.25M  free = 720.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:16:53.139379",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2351.25M  free = 720.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:17:03.159944",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2351.25M  free = 720.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:17:03.176236",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2351.25M  free = 720.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:17:14.395242",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2603.06M  free = 468.94M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:17:24.655221",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2595.06M  free = 476.94M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:17:34.824094",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2650.56M  free = 421.44M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:17:44.946551",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2609.44M  free = 462.56M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:17:55.146009",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2585.44M  free = 486.56M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:18:05.401451",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2577.44M  free = 494.56M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:18:15.463039",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2553.44M  free = 518.56M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:18:25.481556",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2529.44M  free = 542.56M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:18:35.548697",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2513.44M  free = 558.56M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:18:46.131106",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2505.44M  free = 566.56M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:18:56.618706",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2505.44M  free = 566.56M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:19:06.768028",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2505.44M  free = 566.56M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:19:16.823131",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2525.50M  free = 546.50M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:19:27.503922",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2656.62M  free = 415.38M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:19:37.650672",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2656.62M  free = 415.38M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:19:48.009340",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2656.62M  free = 415.38M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:19:58.036170",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2640.62M  free = 431.38M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:20:08.073487",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2675.69M  free = 396.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:20:18.377662",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2651.69M  free = 420.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:20:29.291522",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2651.69M  free = 420.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:20:39.377553",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2643.69M  free = 428.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:20:49.487492",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2635.69M  free = 436.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:20:59.539894",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2635.69M  free = 436.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:21:09.692037",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2619.69M  free = 452.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:21:19.875628",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2611.69M  free = 460.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:21:29.975592",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2603.69M  free = 468.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:21:40.683396",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2587.69M  free = 484.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:21:50.740540",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2571.69M  free = 500.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:22:00.842365",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2563.69M  free = 508.31M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:22:11.002262",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2706.75M  free = 365.25M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:22:21.099558",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2698.75M  free = 373.25M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:22:31.159995",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2698.75M  free = 373.25M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:22:41.788695",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2673.75M  free = 398.25M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:22:52.135038",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2679.25M  free = 392.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:23:02.360586",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2663.25M  free = 408.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:23:12.778168",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 2\nvm.swapusage: total = 3072.00M  used = 2647.25M  free = 424.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:23:22.823853",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2639.25M  free = 432.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:23:33.806637",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2639.25M  free = 432.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:23:44.459115",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2639.25M  free = 432.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:23:54.721377",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2639.25M  free = 432.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:24:04.876743",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2639.25M  free = 432.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:24:14.935599",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2639.25M  free = 432.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:24:25.325164",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2607.25M  free = 464.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:24:35.556598",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2591.25M  free = 480.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:24:45.574104",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2591.25M  free = 480.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:24:55.618770",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2591.25M  free = 480.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:25:05.644446",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2583.25M  free = 488.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:25:15.692772",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2583.25M  free = 488.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:25:26.317270",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2583.25M  free = 488.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:25:36.651958",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2583.25M  free = 488.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:25:46.920858",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2559.25M  free = 512.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:25:57.214760",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2559.25M  free = 512.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:26:07.246844",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2559.25M  free = 512.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:26:17.288271",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2559.25M  free = 512.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:26:27.320684",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2559.25M  free = 512.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:26:37.376051",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2559.25M  free = 512.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:26:47.421593",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2559.25M  free = 512.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:26:57.495635",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2559.25M  free = 512.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:27:07.547004",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2535.25M  free = 536.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:27:18.358531",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2535.25M  free = 536.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:27:28.601697",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2527.25M  free = 544.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:27:38.640613",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2527.25M  free = 544.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:27:49.293094",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2519.25M  free = 552.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:27:59.397038",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2519.25M  free = 552.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:28:09.515592",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2519.25M  free = 552.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:28:19.627667",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2503.25M  free = 568.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:28:29.666849",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2495.25M  free = 576.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:28:39.754026",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2495.25M  free = 576.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:28:49.846390",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2495.25M  free = 576.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:28:59.883196",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2495.25M  free = 576.75M  (encrypted)\n"
+    },
+    {
+      "time": "2026-11-16T04:29:09.898578",
+      "snapshot": "kern.memorystatus_vm_pressure_level: 1\nvm.swapusage: total = 3072.00M  used = 2495.25M  free = 576.75M  (encrypted)\n"
+    }
+  ],
+  "status": "complete"
+}
