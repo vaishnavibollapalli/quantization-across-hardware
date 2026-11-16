@@ -7,7 +7,7 @@ output quality of small LLMs on two edge devices?
 
 | | Device A | Device B |
 |---|---|---|
-| Hardware | Apple M2 MacBook Air | Raspberry Pi 5 |
+| Hardware | Apple M2 MacBook Air | Android Phone |
 | Memory | 8 GB unified | 8 GB |
 | Backend | llama.cpp (Metal) | llama.cpp (CPU) |
 
