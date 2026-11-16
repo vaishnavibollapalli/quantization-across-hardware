@@ -1,17 +1,15 @@
-test,quant,mac_tok_s,android_tok_s,mac/android
-pp256,Q8_0,123.1,10.19,12.08
-pp256,Q4_K_M,119.22,9.36,12.74
-tg128,Q8_0,10.29,2.38,4.32
-tg128,Q4_K_M,14.0,3.76,3.72
-pp256 Q4/Q8 speedup,MacBook_Air_M2,,,0.97
-tg128 Q4/Q8 speedup,MacBook_Air_M2,,,1.36
-pp256 Q4/Q8 speedup,Android,,,0.92
-tg128 Q4/Q8 speedup,Android,,,1.58
-energy run tok/s (512 tok),Q8,10.93,2.75,
-peak RSS MiB,Q8,313.8,3648.8,
-android J/token (gross / net of idle),Q8,,1.339 / 0.884,
-android avg W / peak temp C,Q8,,3.65 / 32.3,
-energy run tok/s (512 tok),Q4,13.78,3.69,
-peak RSS MiB,Q4,2026.4,2953.6,
-android J/token (gross / net of idle),Q4,,1.215 / 0.950,
-android avg W / peak temp C,Q4,,4.43 / 29.5,
+model,test,quant,mac_tok_s,android_tok_s,mac/android
+Phi-3.5-mini-instruct,pp256,Q8_0,not run,6.77,
+Phi-3.5-mini-instruct,pp256,Q4_K_M,not run,6.49,
+Phi-3.5-mini-instruct,tg128,Q8_0,not run,2.18,
+Phi-3.5-mini-instruct,tg128,Q4_K_M,not run,2.87,
+Phi-3.5-mini-instruct,pp256 Q4/Q8 speedup,Android,,,0.96
+Phi-3.5-mini-instruct,tg128 Q4/Q8 speedup,Android,,,1.32
+Qwen2.5-3B-Instruct,pp256,Q8_0,123.1,10.19,12.08
+Qwen2.5-3B-Instruct,pp256,Q4_K_M,119.22,9.36,12.74
+Qwen2.5-3B-Instruct,tg128,Q8_0,10.29,2.38,4.32
+Qwen2.5-3B-Instruct,tg128,Q4_K_M,14.0,3.76,3.72
+Qwen2.5-3B-Instruct,pp256 Q4/Q8 speedup,MacBook_Air_M2,,,0.97
+Qwen2.5-3B-Instruct,tg128 Q4/Q8 speedup,MacBook_Air_M2,,,1.36
+Qwen2.5-3B-Instruct,pp256 Q4/Q8 speedup,Android,,,0.92
+Qwen2.5-3B-Instruct,tg128 Q4/Q8 speedup,Android,,,1.58

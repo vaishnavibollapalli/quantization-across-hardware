@@ -1,5 +1,9 @@
 device,model,quantization,model_size_gib,test,tokens_per_second,std_dev,repeat_count
-Android,Qwen2.5-3B-Instruct,Q8_0,3.05,pp256,10.19,0.4,3
-Android,Qwen2.5-3B-Instruct,Q8_0,3.05,tg128,2.38,0.5,3
+Android,Phi-3.5-mini-instruct,Q4_K_M,2.23,pp256,6.49,0.45,3
+Android,Phi-3.5-mini-instruct,Q4_K_M,2.23,tg128,2.87,0.0,3
+Android,Phi-3.5-mini-instruct,Q8_0,3.78,pp256,6.77,0.18,3
+Android,Phi-3.5-mini-instruct,Q8_0,3.78,tg128,2.18,0.03,3
 Android,Qwen2.5-3B-Instruct,Q4_K_M,1.79,pp256,9.36,0.25,3
 Android,Qwen2.5-3B-Instruct,Q4_K_M,1.79,tg128,3.76,0.07,3
+Android,Qwen2.5-3B-Instruct,Q8_0,3.05,pp256,10.19,0.4,3
+Android,Qwen2.5-3B-Instruct,Q8_0,3.05,tg128,2.38,0.5,3

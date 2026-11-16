@@ -1,0 +1,9 @@
+warning: no usable GPU found, --gpu-layers option will be ignored
+warning: one possible reason is that llama.cpp was compiled without GPU support
+warning: consult docs/build.md for compilation instructions
+0.00.015.497 I srv  llama_server: initializing ...
+0.00.015.541 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.017.169 W srv  llama_server: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.019.879 I srv    load_model: loading model '/data/data/com.termux/files/home/quantization-across-hardware/models/Phi-3.5-mini-instruct-Q8_0.gguf'
+0.00.209.761 W load_arch_hparams: Phi SWA is currently disabled - results might be suboptimal for some models (see https://github.com/ggml-org/llama.cpp/pull/13676)
+0.00.247.460 W load: control-looking token:      2 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
