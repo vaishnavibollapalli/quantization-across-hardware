@@ -68,6 +68,7 @@ class Battery:
 
     def __init__(self):
         self.mode = None
+        self.last = {}
         cur, volt = read_int(f"{PS}/current_now"), read_int(f"{PS}/voltage_now")
         if cur is not None and volt is not None and volt != 0:
             self.mode = "sysfs"
@@ -90,6 +91,7 @@ class Battery:
             return self._amps(c) * self._volts(v)
         if self.mode == "termux-api":
             d = termux_battery() or {}
+            self.last = d
             c = d.get("current")
             v = d.get("voltage")              # mV on newer Termux:API; may be missing
             if c is None:
@@ -244,6 +246,8 @@ def main():
         t0 = time.time()
         while not stop.is_set():
             c, mx, bt = temps(zones)
+            if bt is None:
+                bt = bat.last.get("temperature")
             fr = cpu_freqs_mhz()
             rows.append({
                 "t_s": round(time.time() - t0, 2), "phase": phase["name"],
@@ -304,7 +308,8 @@ def main():
     energy_j = infer_w * wall if infer_w is not None else None
     net_j = (infer_w - idle_w) * wall if None not in (infer_w, idle_w) else None
     temps_inf = [x for x in pick("infer", "cpu_temp_c") if x is not None] or \
-                [x for x in pick("infer", "max_temp_c") if x is not None]
+                [x for x in pick("infer", "max_temp_c") if x is not None] or \
+                [x for x in pick("infer", "batt_temp_c") if x is not None]
     clocks = [x for x in pick("infer", "max_cpu_mhz") if x is not None]
     rss = [r["rss_kb"] for r in rows if r["rss_kb"]]
 
