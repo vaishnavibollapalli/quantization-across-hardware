@@ -17,6 +17,13 @@ OUT="$REPO_ROOT/results/android"
 THREADS="${THREADS:-4}"
 REPS="${REPS:-3}"
 COOLDOWN="${COOLDOWN:-90}"   # seconds between configs so throttling doesn't carry over
+MODEL="${MODEL:-Qwen2.5-3B-Instruct}"   # e.g. MODEL=Phi-3.5-mini-instruct
+QUANTS="${QUANTS:-Q8_0 Q4_K_M}"
+case "$MODEL" in
+  Qwen2.5-3B*) P="" ;;                       # keeps the original file names
+  Phi-3.5*)    P="phi35_" ;;
+  *)           P="$(echo "$MODEL" | tr 'A-Z' 'a-z' | tr -c 'a-z0-9\n' '_')_" ;;
+esac
 mkdir -p "$OUT"
 
 termux-wake-lock 2>/dev/null || true
@@ -30,15 +37,19 @@ cool () {
 }
 run () {   # run <tag> <model-file> <extra llama-bench args...>
   local tag="$1" model="$2"; shift 2
-  local csv="$OUT/android_${tag}.csv"
+  local csv="$OUT/android_${P}${tag}.csv"
   echo "==> $tag  ($model)  start temp $(max_temp) C"
-  "$BENCH" -m "$MODEL_DIR/$model" -r "$REPS" -o csv "$@" > "$csv"
-  echo "   wrote $csv  end temp $(max_temp) C"
+  if [ ! -s "$MODEL_DIR/$model" ]; then echo "   MISSING $MODEL_DIR/$model — skipping"; return; fi
+  if "$BENCH" -m "$MODEL_DIR/$model" -r "$REPS" -o csv "$@" > "$csv"; then
+    echo "   wrote $csv  end temp $(max_temp) C"
+  else
+    echo "   FAILED (likely out of memory) — record as 'does not fit'"; rm -f "$csv"
+  fi
   cool
 }
 
-for Q in Q8_0 Q4_K_M; do
-  M="Qwen2.5-3B-Instruct-$Q.gguf"
+for Q in $QUANTS; do
+  M="$MODEL-$Q.gguf"
   q=$(echo "$Q" | tr 'A-Z' 'a-z' | cut -d_ -f1)    # q8 / q4
 
   # 1) Core config — identical to results/mac_m2/mac_m2_${q}_full_bench.csv
@@ -63,9 +74,8 @@ for Q in Q8_0 Q4_K_M; do
   fi
 done
 
-if [ "${WITH_F16:-0}" = "1" ] && [ -s "$MODEL_DIR/Qwen2.5-3B-Instruct-f16.gguf" ]; then
-  run "f16_full_bench" "Qwen2.5-3B-Instruct-f16.gguf" -p 256 -n 128 -t "$THREADS" \
-    || echo "F16 failed (likely out of memory) — note it as an OOM result"
+if [ "${WITH_F16:-0}" = "1" ]; then
+  run "f16_full_bench" "$MODEL-f16.gguf" -p 256 -n 128 -t "$THREADS"
 fi
 
 termux-wake-unlock 2>/dev/null || true

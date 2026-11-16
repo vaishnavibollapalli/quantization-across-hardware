@@ -208,6 +208,10 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--probe", action="store_true")
     ap.add_argument("--quant", default="Q8_0", help="Q8_0, Q4_K_M or f16")
+    ap.add_argument("--model", default="Qwen2.5-3B-Instruct",
+                    help="GGUF name prefix in models/, e.g. Phi-3.5-mini-instruct")
+    ap.add_argument("--ctx", type=int, default=4096,
+                    help="context size; use 1024 for models with a large KV cache (Phi-3.5)")
     ap.add_argument("--threads", type=int, default=4)
     ap.add_argument("--n-predict", type=int, default=512)
     ap.add_argument("--idle-s", type=int, default=20, help="idle baseline seconds")
@@ -218,11 +222,15 @@ def main():
         probe()
         return
 
-    model = MODELS / f"Qwen2.5-3B-Instruct-{args.quant}.gguf"
+    model = MODELS / f"{args.model}-{args.quant}.gguf"
     if not model.exists():
         sys.exit(f"missing {model} — run android/01_setup.sh")
     OUT.mkdir(parents=True, exist_ok=True)
     tag = args.quant.lower().split("_")[0] + ("" if args.ctk == "f16" else f"_kv{args.ctk}")
+    if not args.model.startswith("Qwen2.5-3B"):
+        short = "phi35" if args.model.startswith("Phi-3.5") else \
+            "".join(c if c.isalnum() else "_" for c in args.model.lower())
+        tag = f"{short}_{tag}"
 
     bat, zones = Battery(), thermal_zones()
     st = bat.status()
@@ -231,7 +239,7 @@ def main():
     elif st.lower() not in ("discharging", "not charging"):
         print(f"WARNING: battery status is '{st}'. Unplug the phone for valid energy numbers.")
 
-    cmd = [str(SERVER), "-m", str(model), "-c", "4096", "-t", str(args.threads),
+    cmd = [str(SERVER), "-m", str(model), "-c", str(args.ctx), "-t", str(args.threads),
            "--port", str(PORT), "--host", "127.0.0.1", "-ngl", "0"]
     if args.ctk != "f16":
         cmd += ["-fa", "on", "-ctk", args.ctk, "-ctv", args.ctk]
@@ -317,7 +325,7 @@ def main():
         "device": "android", "phone": subprocess.run(["getprop", "ro.product.model"],
                                                        capture_output=True, text=True).stdout.strip()
         if shutil.which("getprop") else None,
-        "model": "Qwen2.5-3B-Instruct", "quant": args.quant, "kv_cache": args.ctk,
+        "model": args.model, "ctx": args.ctx, "quant": args.quant, "kv_cache": args.ctk,
         "threads": args.threads, "power_source": bat.mode,
         "prompt_n": tm.get("prompt_n"), "prompt_ms": tm.get("prompt_ms"),
         "predicted_n": n_tok, "predicted_per_second": tm.get("predicted_per_second"),
